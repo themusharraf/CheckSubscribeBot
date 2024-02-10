@@ -6,7 +6,7 @@ from aiogram.filters.command import Command
 from aiogram.enums import ParseMode
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
-TOKEN = ""
+TOKEN = "6752113285:AAFM7Wy86Q50-OlVpEI5jYZdZrzeAUzrj9U"
 
 dp = Dispatcher()
 
