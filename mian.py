@@ -17,8 +17,10 @@ check = InlineKeyboardMarkup(inline_keyboard=[
 
 
 @dp.message(Command("start"))
-async def start(message: Message):
+async def start(message: Message, bot: Bot):
     await message.answer("Hello there, my", reply_markup=check)
+    await bot.send_message(chat_id=-1002122098350,
+                           text=f"botga yangi foydalanuvchi keldi {message.from_user.full_name}")
 
 
 @dp.callback_query(F.data == "submit")
